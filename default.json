@@ -1,0 +1,20 @@
+{
+  "forgeVersion": "1.20.1-forge-47.3.33",
+  "name": "sinekasu",
+  "mods": [
+    {
+      "type": "direct_jar",
+      "url": "https://media-uploader.work/?mode=dl&id=14350&original=1&key=070781e7-2552-4a73-b705-a7001a5bdc30",
+      "name": "testotto.jar"
+    },
+    {
+      "type": "direct_zip",
+      "url": "https://media-uploader.work/?mode=dl&id=12196&original=1&key=3de8209d-270c-4a8b-8490-a9c93ad0fc79"
+    }
+  ],
+  "otherFiles": [
+    {
+      "url": "https://media-uploader.work/?mode=dl&id=12196&original=1&key=3de8209d-270c-4a8b-8490-a9c93ad0fc79"
+    }
+  ]
+}
