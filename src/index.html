@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMIR</title>
+  <script type="module" src="/main.js" defer></script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="header">
+      <div id="title">
+        <div id="t1">AMIR</div>
+        <div id="t2"><span class="ass">A</span>uto <span class="ass">M</span>od <span class="ass">I</span>nstaller.<span
+            class="ass">R</span>s</div>
+      </div>
+    </div>
+    <div id="body">
+      <div id="user-input">
+        <div class="i" id="i-conf">
+          インストール構成を入力
+          <input id="i-url" value="https://raw.githubusercontent.com/keik1215/AMIR/refs/heads/main/default.json"
+            placeholder="URLを入力" type="text" />
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" style="padding-top:56px;width:15px;height:100%;">
+          <polyline style="fill:none;stroke:#23384D;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;"
+            points="3 5 9 11 3 17" />
+        </svg>
+        <div class="i" id="i-dir">
+          .minecraftディレクトリを選択
+          <div class="dirInfo">
+            <button id="selectmc" class="filebut">選択</button>
+            <p id="dirmc" class="filetex"></p>
+          </div>
+          <label id="auto-info">
+            <span id="dont">構成を自動生成しない:</span>
+            <div class="toggle_button">
+              <input id="auto" class="toggle_input" type="checkbox" />
+              <label for="auto" class="toggle_label">
+            </div>
+          </label>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" style="padding-top:56px;width:15px;height:100%;">
+          <polyline style="fill:none;stroke:#23384D;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;"
+            points="3 5 9 11 3 17" />
+        </svg>
+        <div class="i" id="i-cdir">
+          MODが入るディレクトリを選択
+          <div class="dirInfo">
+            <button id="selectcd" class="filebut">選択</button>
+            <p id="dircd" class="filetex"></p>
+          </div>
+        </div>
+      </div>
+      <div id="startzone">
+        <button id="startbut">START INSTALLING</button>
+      </div>
+      <div id="status">
+        <div id="progress">
+          <div class="progressPoint">
+            <div id="p-chec" class="progressLight">
+            </div>
+            構成確認
+            <p class="description">指定またはデフォルトの構成ファイルが正しく設定されているかどうか確認します。</p>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" style="padding-top:56px;width:15px;height:100%;">
+            <polyline style="fill:none;stroke:#23384D;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;"
+              points="3 5 9 11 3 17" />
+          </svg>
+          <div class="progressPoint">
+            <div id="p-diag" class="progressLight">
+            </div>
+            環境診断
+            <p class="description">簡易的にJavaや指定のForgeバージョンが導入されているかどうか確認します。</p>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" style="padding-top:56px;width:15px;height:100%;">
+            <polyline style="fill:none;stroke:#23384D;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;"
+              points="3 5 9 11 3 17" />
+          </svg>
+          <div class="progressPoint">
+            <div id="p-down" class="progressLight">
+            </div>
+            MOD導入
+            <p class="description">構成から必要とされるMODを指定のディレクトリにダウンロード、展開し導入します。</p>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" style="padding-top:56px;width:15px;height:100%;">
+            <polyline style="fill:none;stroke:#23384D;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;"
+              points="3 5 9 11 3 17" />
+          </svg>
+          <div class="progressPoint">
+            <div id="p-make" class="progressLight">
+            </div>
+            構成作成
+            <p class="description">有効なとき、Minecraftランチャーに自動的に構成を作成し、すぐに遊べる状態にします。
+            </p>
+          </div>
+        </div>
+        <div id="stat-buttons">
+          <button id="logs" class="stat-button chosen">Logs</button>
+          <button id="files" class="stat-button">Files</button>
+        </div>
+        <div id="live-stat" class="logs">
+          <div id="s-logs">
+          </div>
+          <div id="s-files">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
